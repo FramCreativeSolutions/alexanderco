@@ -553,10 +553,22 @@ justify-content: center;
     display: flex;
 }
 
+.canada {
+    grid-column: 2;
+    grid-row: 3;
+    display: flex;
+}
+
 .flag {
     width: 28px;
     height: 16px;
     margin-right: 10px;
+}
+
+.japan {
+    grid-column: 13 / 30;
+    grid-row: 7;
+    display: flex;
 }
 
 .mexico {
@@ -601,6 +613,12 @@ justify-content: center;
     display: flex;
 }
 
+.thailand{
+    grid-column: 12 /22;
+    grid-row: 15;
+    display: flex;
+}
+
 .australia {
     grid-column: 11;
     grid-row: 19;
@@ -621,7 +639,7 @@ justify-content: center;
 
 .new-zeeland {
     grid-column: 20 / 40;
-    grid-row: 20;
+    grid-row: 19;
     display: flex;
 }
 
@@ -798,4 +816,8 @@ padding: 0px 70px 0px 70px;
 
 .zoom {
     animation: zoom 1s ease-in-out forwards;
+}
+
+.flag2 {
+    transform: translateY(20%);
 }

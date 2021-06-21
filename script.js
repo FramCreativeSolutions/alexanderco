@@ -40,6 +40,9 @@ if (element.classList.toString().includes('black-square6')){
 if (element.classList.toString().includes('inner-circle')){
   temp = 'inner-circle'
 }
+if (element.classList.toString().includes('service-number')){
+  temp = 'service-number'
+}
 
     if (temp === 'about-img'){
         element.classList.add("scrolled1");
@@ -61,6 +64,9 @@ if (temp === 'black-square6') {
 }
 if (temp === 'inner-circle') {
   element.classList.add("rotate");
+}
+if (temp === 'service-number') {
+  element.classList.add("zoom");
 }
 };
 
@@ -85,7 +91,7 @@ window.addEventListener("scroll", () => {
 let usa = document.getElementsByClassName('usa')[0];
 let products = document.getElementsByClassName("products")[0]
 usa.addEventListener('click',() => {
-document.getElementsByClassName("products")[0].innerHTML = `<img src="./3.png" class="flag"/><strong>USA</strong><div style="height: 10px;"></div><div>Cereal</div><div>Chips</div><div>Popcorn</div><div>Oils</div>`
+document.getElementsByClassName("products")[0].innerHTML = `<img src="./3.png" class="flag"/><strong>Products from the USA</strong><hr class="products-hr"/><div style="height: 10px;"></div><div>Cereal</div><div>Chips</div><div>Popcorn</div><div>Oils</div>`
 products.style.display = 'block'
 products.scrollIntoView({ 
   behavior: 'smooth' 

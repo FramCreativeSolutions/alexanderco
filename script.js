@@ -1,3 +1,39 @@
+let about = document.getElementsByClassName('container-about')[0];
+let about_button = document.getElementById('about')
+about_button.addEventListener('click',() => {
+about.scrollIntoView({ 
+  behavior: 'smooth' 
+});
+})
+
+let products2 = document.getElementById('products2');
+let products_button = document.getElementById('products')
+products_button.addEventListener('click',() => {
+products2.scrollIntoView({ 
+  behavior: 'smooth' 
+});
+})
+
+let services = document.getElementsByClassName('container-services')[0];
+let services_button = document.getElementById('services')
+services_button.addEventListener('click',() => {
+services.scrollIntoView({ 
+  behavior: 'smooth' 
+});
+})
+
+let contacts = document.getElementsByClassName('container-footer')[0];
+let contacts_button = document.getElementById('contacts')
+contacts_button.addEventListener('click',() => {
+contacts.scrollIntoView({ 
+  behavior: 'smooth' 
+});
+})
+
+
+
+
+
 const scrollElements = document.querySelectorAll(".js-scroll");
 
 const elementInView = (el, dividend = 1.25) => {

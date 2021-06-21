@@ -30,6 +30,14 @@ contacts.scrollIntoView({
 });
 })
 
+let button_home = document.getElementById('button-home');
+button_home.addEventListener('click',() => {
+  products2.scrollIntoView({ 
+  behavior: 'smooth' 
+});
+})
+
+
 
 
 

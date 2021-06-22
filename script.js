@@ -1,6 +1,15 @@
 let about = document.getElementsByClassName('container-about')[0];
 let about_button = document.getElementById('about')
 about_button.addEventListener('click',() => {
+document.getElementsByClassName("container-menu-items2")[0].style.display = 'none'
+about.scrollIntoView({ 
+  behavior: 'smooth' 
+});
+})
+
+let about_button2 = document.getElementById('about2')
+about_button2.addEventListener('click',() => {
+document.getElementsByClassName("container-menu-items2")[0].style.display = 'none'
 about.scrollIntoView({ 
   behavior: 'smooth' 
 });
@@ -13,6 +22,13 @@ products2.scrollIntoView({
   behavior: 'smooth' 
 });
 })
+let products_button2 = document.getElementById('products2')
+products_button2.addEventListener('click',() => {
+products2.scrollIntoView({ 
+  behavior: 'smooth' 
+});
+})
+
 
 let services = document.getElementsByClassName('container-services')[0];
 let services_button = document.getElementById('services')
@@ -21,10 +37,22 @@ services.scrollIntoView({
   behavior: 'smooth' 
 });
 })
+let services_button2 = document.getElementById('services2')
+services_button2.addEventListener('click',() => {
+services.scrollIntoView({ 
+  behavior: 'smooth' 
+});
+})
 
 let contacts = document.getElementsByClassName('container-footer')[0];
 let contacts_button = document.getElementById('contacts')
 contacts_button.addEventListener('click',() => {
+contacts.scrollIntoView({ 
+  behavior: 'smooth' 
+});
+})
+let contacts_button2 = document.getElementById('contacts2')
+contacts_button2.addEventListener('click',() => {
 contacts.scrollIntoView({ 
   behavior: 'smooth' 
 });
@@ -144,6 +172,18 @@ scrolltoObj.scrollIntoView({
   behavior: 'smooth' 
 });
 })
+let tempUsa = false
+let usa2 = document.getElementsByClassName('usa2')[0];
+usa2.addEventListener('click',() => {
+tempUsa = !tempUsa
+if (tempUsa) {
+  document.getElementsByClassName("dropdown-products-usa")[0].style.display = 'block'
+  document.getElementsByClassName("chevron-usa")[0].style.transform = 'rotate(270deg)'
+} else {
+  document.getElementsByClassName("dropdown-products-usa")[0].style.display = 'none'
+  document.getElementsByClassName("chevron-usa")[0].style.transform = 'rotate(90deg)'
+}
+})
 
 let hungary = document.getElementsByClassName('hungary')[0];
 hungary.addEventListener('click',() => {
@@ -152,6 +192,18 @@ products.style.display = 'block'
 scrolltoObj.scrollIntoView({ 
   behavior: 'smooth' 
 });
+})
+let tempHungary = false
+let hungary2 = document.getElementsByClassName('hungary2')[0];
+hungary2.addEventListener('click',() => {
+tempHungary = !tempHungary
+if (tempHungary) {
+  document.getElementsByClassName("dropdown-products-hungary")[0].style.display = 'block'
+  document.getElementsByClassName("chevron-hungary")[0].style.transform = 'rotate(270deg)'
+} else {
+  document.getElementsByClassName("dropdown-products-hungary")[0].style.display = 'none'
+  document.getElementsByClassName("chevron-hungary")[0].style.transform = 'rotate(90deg)'
+}
 })
 
 let italy = document.getElementsByClassName('italy')[0];
@@ -162,6 +214,18 @@ scrolltoObj.scrollIntoView({
   behavior: 'smooth' 
 });
 })
+let tempItaly = false
+let italy2 = document.getElementsByClassName('italy2')[0];
+italy2.addEventListener('click',() => {
+tempItaly = !tempItaly
+if (tempItaly) {
+  document.getElementsByClassName("dropdown-products-italy")[0].style.display = 'block'
+  document.getElementsByClassName("chevron-italy")[0].style.transform = 'rotate(270deg)'
+} else {
+  document.getElementsByClassName("dropdown-products-italy")[0].style.display = 'none'
+  document.getElementsByClassName("chevron-italy")[0].style.transform = 'rotate(90deg)'
+}
+})
 
 let spain = document.getElementsByClassName('spain')[0];
 spain.addEventListener('click',() => {
@@ -170,6 +234,18 @@ products.style.display = 'block'
 scrolltoObj.scrollIntoView({ 
   behavior: 'smooth' 
 });
+})
+let tempSpain = false
+let spain2 = document.getElementsByClassName('spain2')[0];
+spain2.addEventListener('click',() => {
+  tempSpain = !tempSpain
+if (tempSpain) {
+  document.getElementsByClassName("dropdown-products-spain")[0].style.display = 'block'
+  document.getElementsByClassName("chevron-spain")[0].style.transform = 'rotate(270deg)'
+} else {
+  document.getElementsByClassName("dropdown-products-spain")[0].style.display = 'none'
+  document.getElementsByClassName("chevron-spain")[0].style.transform = 'rotate(90deg)'
+}
 })
 
 let mexico = document.getElementsByClassName('mexico')[0];
@@ -180,6 +256,18 @@ scrolltoObj.scrollIntoView({
   behavior: 'smooth' 
 });
 })
+let tempMexico = false
+let mexico2 = document.getElementsByClassName('mexico2')[0];
+mexico2.addEventListener('click',() => {
+  tempMexico = !tempMexico
+if (tempMexico) {
+  document.getElementsByClassName("dropdown-products-mexico")[0].style.display = 'block'
+  document.getElementsByClassName("chevron-mexico")[0].style.transform = 'rotate(270deg)'
+} else {
+  document.getElementsByClassName("dropdown-products-mexico")[0].style.display = 'none'
+  document.getElementsByClassName("chevron-mexico")[0].style.transform = 'rotate(90deg)'
+}
+})
 
 let chile = document.getElementsByClassName('chile')[0];
 chile.addEventListener('click',() => {
@@ -188,6 +276,18 @@ products.style.display = 'block'
 scrolltoObj.scrollIntoView({ 
   behavior: 'smooth' 
 });
+})
+let tempChile = false
+let chile2 = document.getElementsByClassName('chile2')[0];
+chile2.addEventListener('click',() => {
+  tempChile = !tempChile
+if (tempChile) {
+  document.getElementsByClassName("dropdown-products-chile")[0].style.display = 'block'
+  document.getElementsByClassName("chevron-chile")[0].style.transform = 'rotate(270deg)'
+} else {
+  document.getElementsByClassName("dropdown-products-chile")[0].style.display = 'none'
+  document.getElementsByClassName("chevron-chile")[0].style.transform = 'rotate(90deg)'
+}
 })
 
 let japan = document.getElementsByClassName('japan')[0];
@@ -198,6 +298,18 @@ scrolltoObj.scrollIntoView({
   behavior: 'smooth' 
 });
 })
+let tempJapan = false
+let japan2 = document.getElementsByClassName('japan2')[0];
+japan2.addEventListener('click',() => {
+  tempJapan = !tempJapan
+if (tempJapan) {
+  document.getElementsByClassName("dropdown-products-japan")[0].style.display = 'block'
+  document.getElementsByClassName("chevron-japan")[0].style.transform = 'rotate(270deg)'
+} else {
+  document.getElementsByClassName("dropdown-products-japan")[0].style.display = 'none'
+  document.getElementsByClassName("chevron-japan")[0].style.transform = 'rotate(90deg)'
+}
+})
 
 let sri_lanka = document.getElementsByClassName('sri-lanka')[0];
 sri_lanka.addEventListener('click',() => {
@@ -206,6 +318,18 @@ products.style.display = 'block'
 scrolltoObj.scrollIntoView({ 
   behavior: 'smooth' 
 });
+})
+let tempLanka = false
+let lanka2 = document.getElementsByClassName('sri-lanka2')[0];
+lanka2.addEventListener('click',() => {
+  tempLanka = !tempLanka
+if (tempLanka) {
+  document.getElementsByClassName("dropdown-products-lanka")[0].style.display = 'block'
+  document.getElementsByClassName("chevron-lanka")[0].style.transform = 'rotate(270deg)'
+} else {
+  document.getElementsByClassName("dropdown-products-lanka")[0].style.display = 'none'
+  document.getElementsByClassName("chevron-lanka")[0].style.transform = 'rotate(90deg)'
+}
 })
 
 let hong_kong = document.getElementsByClassName('hong-kong')[0];
@@ -216,6 +340,18 @@ scrolltoObj.scrollIntoView({
   behavior: 'smooth' 
 });
 })
+let tempHong = false
+let hong2 = document.getElementsByClassName('hong-kong2')[0];
+hong2.addEventListener('click',() => {
+  tempHong = !tempHong
+if (tempHong) {
+  document.getElementsByClassName("dropdown-products-kong")[0].style.display = 'block'
+  document.getElementsByClassName("chevron-kong")[0].style.transform = 'rotate(270deg)'
+} else {
+  document.getElementsByClassName("dropdown-products-kong")[0].style.display = 'none'
+  document.getElementsByClassName("chevron-kong")[0].style.transform = 'rotate(90deg)'
+}
+})
 
 let singapore = document.getElementsByClassName('singapore')[0];
 singapore.addEventListener('click',() => {
@@ -224,6 +360,18 @@ products.style.display = 'block'
 scrolltoObj.scrollIntoView({ 
   behavior: 'smooth' 
 });
+})
+let tempSingapore = false
+let singapore2 = document.getElementsByClassName('singapore2')[0];
+singapore2.addEventListener('click',() => {
+  tempSingapore = !tempSingapore
+if (tempSingapore) {
+  document.getElementsByClassName("dropdown-products-singapore")[0].style.display = 'block'
+  document.getElementsByClassName("chevron-singapore")[0].style.transform = 'rotate(270deg)'
+} else {
+  document.getElementsByClassName("dropdown-products-singapore")[0].style.display = 'none'
+  document.getElementsByClassName("chevron-singapore")[0].style.transform = 'rotate(90deg)'
+}
 })
 
 let thailand = document.getElementsByClassName('thailand')[0];
@@ -234,6 +382,18 @@ scrolltoObj.scrollIntoView({
   behavior: 'smooth' 
 });
 })
+let tempThailand = false
+let thailand2 = document.getElementsByClassName('thailand2')[0];
+thailand2.addEventListener('click',() => {
+  tempThailand = !tempThailand
+if (tempThailand) {
+  document.getElementsByClassName("dropdown-products-thailand")[0].style.display = 'block'
+  document.getElementsByClassName("chevron-thailand")[0].style.transform = 'rotate(270deg)'
+} else {
+  document.getElementsByClassName("dropdown-products-thailand")[0].style.display = 'none'
+  document.getElementsByClassName("chevron-thailand")[0].style.transform = 'rotate(90deg)'
+}
+})
 
 let new_zealand = document.getElementsByClassName('new-zeeland')[0];
 new_zealand.addEventListener('click',() => {
@@ -242,6 +402,18 @@ products.style.display = 'block'
 scrolltoObj.scrollIntoView({ 
   behavior: 'smooth' 
 });
+})
+let tempZeeland = false
+let zeeland2 = document.getElementsByClassName('new-zeeland2')[0];
+zeeland2.addEventListener('click',() => {
+  tempZeeland = !tempZeeland
+if (tempZeeland) {
+  document.getElementsByClassName("dropdown-products-zeeland")[0].style.display = 'block'
+  document.getElementsByClassName("chevron-zeeland")[0].style.transform = 'rotate(270deg)'
+} else {
+  document.getElementsByClassName("dropdown-products-zeeland")[0].style.display = 'none'
+  document.getElementsByClassName("chevron-zeeland")[0].style.transform = 'rotate(90deg)'
+}
 })
 
 let australia = document.getElementsByClassName('australia')[0];
@@ -252,6 +424,18 @@ scrolltoObj.scrollIntoView({
   behavior: 'smooth' 
 });
 })
+let tempAustralia = false
+let australia2 = document.getElementsByClassName('australia2')[0];
+australia2.addEventListener('click',() => {
+  tempAustralia = !tempAustralia
+if (tempAustralia) {
+  document.getElementsByClassName("dropdown-products-australia")[0].style.display = 'block'
+  document.getElementsByClassName("chevron-australia")[0].style.transform = 'rotate(270deg)'
+} else {
+  document.getElementsByClassName("dropdown-products-australia")[0].style.display = 'none'
+  document.getElementsByClassName("chevron-australia")[0].style.transform = 'rotate(90deg)'
+}
+})
 
 let canada = document.getElementsByClassName('canada')[0];
 canada.addEventListener('click',() => {
@@ -261,6 +445,18 @@ scrolltoObj.scrollIntoView({
   behavior: 'smooth' 
 });
 })
+let tempCanada = false
+let canada2 = document.getElementsByClassName('canada2')[0];
+canada2.addEventListener('click',() => {
+tempCanada = !tempCanada
+if (tempCanada) {
+  document.getElementsByClassName("dropdown-products-canada")[0].style.display = 'block'
+  document.getElementsByClassName("chevron-canada")[0].style.transform = 'rotate(270deg)'
+} else {
+  document.getElementsByClassName("dropdown-products-canada")[0].style.display = 'none'
+  document.getElementsByClassName("chevron-canada")[0].style.transform = 'rotate(90deg)'
+}
+})
 
 let greece = document.getElementsByClassName('greece')[0];
 greece.addEventListener('click',() => {
@@ -269,4 +465,33 @@ products.style.display = 'block'
 scrolltoObj.scrollIntoView({ 
   behavior: 'smooth' 
 });
+})
+let tempGreece = false
+let greece2 = document.getElementsByClassName('greece2')[0];
+greece2.addEventListener('click',() => {
+  tempGreece = !tempGreece
+if (tempGreece) {
+  document.getElementsByClassName("dropdown-products-greece")[0].style.display = 'block'
+  document.getElementsByClassName("chevron-greece")[0].style.transform = 'rotate(270deg)'
+} else {
+  document.getElementsByClassName("dropdown-products-greece")[0].style.display = 'none'
+  document.getElementsByClassName("chevron-greece")[0].style.transform = 'rotate(90deg)'
+}
+})
+
+
+
+let burger = document.getElementsByClassName('burger')[0];
+let close = document.getElementsByClassName('close')[0];
+
+burger.addEventListener('click',() => {
+document.getElementsByClassName("container-menu-items2")[0].style.display = 'flex'
+burger.style.display = 'none'
+close.style.display = 'block'
+})
+
+close.addEventListener('click',() => {
+document.getElementsByClassName("container-menu-items2")[0].style.display = 'none'
+burger.style.display = 'block'
+close.style.display = 'none'
 })

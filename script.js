@@ -1,3 +1,7 @@
+
+let burger = document.getElementsByClassName('burger')[0];
+let close = document.getElementsByClassName('close')[0];
+
 let about = document.getElementsByClassName('container-about')[0];
 let about_button = document.getElementById('about')
 about_button.addEventListener('click',() => {
@@ -10,12 +14,14 @@ about.scrollIntoView({
 let about_button2 = document.getElementById('about2')
 about_button2.addEventListener('click',() => {
 document.getElementsByClassName("container-menu-items2")[0].style.display = 'none'
+burger.style.display = 'block'
+close.style.display = 'none'
 about.scrollIntoView({ 
   behavior: 'smooth' 
 });
 })
 
-let products2 = document.getElementById('products2');
+let products2 = document.getElementById('productsDesk');
 let products_button = document.getElementById('products')
 products_button.addEventListener('click',() => {
 products2.scrollIntoView({ 
@@ -23,8 +29,12 @@ products2.scrollIntoView({
 });
 })
 let products_button2 = document.getElementById('products2')
+let productsMobile = document.getElementById('products-mobile')
 products_button2.addEventListener('click',() => {
-products2.scrollIntoView({ 
+  document.getElementsByClassName("container-menu-items2")[0].style.display = 'none'
+burger.style.display = 'block'
+close.style.display = 'none'
+productsMobile.scrollIntoView({ 
   behavior: 'smooth' 
 });
 })
@@ -38,11 +48,16 @@ services.scrollIntoView({
 });
 })
 let services_button2 = document.getElementById('services2')
+let servicesMobile = document.getElementById('servicesMobile')
 services_button2.addEventListener('click',() => {
-services.scrollIntoView({ 
+  document.getElementsByClassName("container-menu-items2")[0].style.display = 'none'
+burger.style.display = 'block'
+close.style.display = 'none'
+servicesMobile.scrollIntoView({ 
   behavior: 'smooth' 
 });
 })
+
 
 let contacts = document.getElementsByClassName('container-footer')[0];
 let contacts_button = document.getElementById('contacts')
@@ -51,8 +66,11 @@ contacts.scrollIntoView({
   behavior: 'smooth' 
 });
 })
-let contacts_button2 = document.getElementById('contacts2')
-contacts_button2.addEventListener('click',() => {
+let contact_button2 = document.getElementById('contacts2')
+contact_button2.addEventListener('click',() => {
+document.getElementsByClassName("container-menu-items2")[0].style.display = 'none'
+burger.style.display = 'block'
+close.style.display = 'none'
 contacts.scrollIntoView({ 
   behavior: 'smooth' 
 });
@@ -60,9 +78,18 @@ contacts.scrollIntoView({
 
 let button_home = document.getElementById('button-home');
 button_home.addEventListener('click',() => {
-  products2.scrollIntoView({ 
+    document.getElementById('productsDesk').scrollIntoView({ 
   behavior: 'smooth' 
 });
+if (burger.style.display !== 'none') {
+  document.getElementsByClassName("container-menu-items2")[0].style.display = 'none'
+  burger.style.display = 'block'
+  close.style.display = 'none'
+  productsMobile.scrollIntoView({ 
+    behavior: 'smooth' 
+  });
+
+}
 })
 
 
@@ -480,9 +507,6 @@ if (tempGreece) {
 })
 
 
-
-let burger = document.getElementsByClassName('burger')[0];
-let close = document.getElementsByClassName('close')[0];
 
 burger.addEventListener('click',() => {
 document.getElementsByClassName("container-menu-items2")[0].style.display = 'flex'

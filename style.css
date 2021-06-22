@@ -725,6 +725,10 @@ padding: 0px 70px 0px 70px;
     
 }
 
+.container-services2 {
+    display: none;
+}
+
 .col-holder {
     display: flex;
     align-items: flex-start;

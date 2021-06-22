@@ -18,6 +18,10 @@
        display: none;
    }
 
+   .greasy-logo {
+    width: 60vw;
+}
+
    .container-menu-items2 {
     display: none;
     flex-direction: column;
@@ -25,7 +29,7 @@
     height: 89vh;
     background: white;
     position: fixed;
-    padding: 5vh 0vh 10vh 0vh;
+    padding: 5vh 0vh 30vh 0vh;
     justify-content: space-around;
     align-items: center;
     z-index: 98;
@@ -401,4 +405,135 @@ flex-direction: column;
                         line-height: 5px;
                     }
 
+
+
+
+                    .container-our-indust{
+                        height: fit-content;
+                      display: flex;
+                         min-height: 90vh;
+                      flex-direction: column;
+                      align-items: center;
+                      justify-content: center;
+                          margin-bottom: 2vh;
+                         padding: 30px;
+                    }
+                    
+                    .our-indust {
+                        max-width: 400px;
+                      min-width: 270px;
+                     min-height: 30vh;
+                     margin-top: 20px;
+                      margin-bottom: 20px;
+                       
+                    }
+                    
+                    .black-squares2 {
+                    width: 80%;
+                    height: fit-content;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    padding: 0px;
+                    }
+                    
+                    .black-square2 {
+                        max-width: 270px;
+                         height: 17vh;
+                   padding: 10px;
+                    margin: 10px;
+                   flex-direction: column;
+                    
+                    }
+                    
+                    .icon {
+                        height: 40px;
+                        padding-bottom: 10px;
+                    }
+                    
+                    .text-under-number {
+                        font-size: 15px;
+                    }
+
+
+
+                    .container-services2 {
+                        display: flex;
+                        flex-direction: column;
+                        box-sizing: border-box;
+                        width: fit-content;
+                        padding: 10vh 0vh 10vh 0vh;
+                    }
+
+                    .container-services {
+                        display: none;
+                    }
+                    
+                    .col-holder {
+                        display: flex;
+                        flex-direction: column;
+                        padding: 0vh 8vw 0vh 8vw;
+                    }
+                    
+                    .service-number {
+                        font-size: 38px;
+                        padding-bottom: 1vh;
+                    }
+                    
+                    .service-text {
+                        font-size: 15px;
+                    }
+
+
+                    .container-footer {
+                        width: 100vw;
+                        height: fit-content;
+                        display: flex;
+                        flex-direction: column;
+                        padding: 60px 10px 20px 30px;
+                    }
+                    
+                    .col-holder1 {
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: start;
+                        align-items: flex-start;
+                        padding: 0px;
+                    }
+                    
+                    .contact-icon {
+                        height: 20px;
+                        display: inline-block;
+                        transform: translateY(30%);
+                        padding-right: 10px;
+                    }
+                    
+                    .contact {
+                        font-size: 15px;
+                        font-weight: 400;
+                        font-family: var(--font);
+                        padding-bottom: 40px;
+                        color: white;
+                        line-height: 30px;
+                    }
+                    
+                    .col-11 {
+                      width: 90vw;
+                      display: flex;
+                      flex-direction: column;
+                    }
+                    
+                    .col-21 {
+                        width: 90vw;
+                        display: flex;
+                        flex-direction: column;
+                      }
+                    
+                      .footer-logo {
+                        width: 60vw;
+                         padding: 0px 0px 40px 0px;
+                    
+                      }
 }
+
+

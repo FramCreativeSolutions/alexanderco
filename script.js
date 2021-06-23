@@ -12,7 +12,7 @@ if (burger.style.display !== 'none') {
   document.getElementsByClassName("container-menu-items2")[0].style.display = 'none'
   burger.style.display = 'block'
   close.style.display = 'none'
-  productsMobile.scrollIntoView({ 
+  homePage.scrollIntoView({ 
     behavior: 'smooth' 
   });
 

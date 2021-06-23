@@ -90,8 +90,19 @@
     padding: 10px;
 }
 
+.about-paragraph {
+    font-size: 17px;
+}
+
+.big-blue-text {
+    color: white;
+    font-size: 50px;
+    font-weight: 300;
+}
+
+
 .blue-text-inline {
-    color: var(--blue);
+    font-weight: 500;
 }
 
 .about-img {

@@ -2,6 +2,23 @@
 let burger = document.getElementsByClassName('burger')[0];
 let close = document.getElementsByClassName('close')[0];
 
+let home = document.getElementsByClassName('logo-white')[0];
+let homePage = document.getElementsByClassName('container-landing')[0];
+home.addEventListener('click',() => {
+homePage.scrollIntoView({ 
+  behavior: 'smooth' 
+});
+if (burger.style.display !== 'none') {
+  document.getElementsByClassName("container-menu-items2")[0].style.display = 'none'
+  burger.style.display = 'block'
+  close.style.display = 'none'
+  productsMobile.scrollIntoView({ 
+    behavior: 'smooth' 
+  });
+
+}
+})
+
 let about = document.getElementsByClassName('container-about')[0];
 let about_button = document.getElementById('about')
 about_button.addEventListener('click',() => {
@@ -424,7 +441,7 @@ if (tempThailand) {
 
 let new_zealand = document.getElementsByClassName('new-zeeland')[0];
 new_zealand.addEventListener('click',() => {
-document.getElementsByClassName("products")[0].innerHTML = `<img src="./6.png" class="flag flag2"/><strong>Products from New Zeeland</strong><hr class="products-hr"/><div style="height: 10px;"></div><div>Wine</div><div>Cotton</div><div>Sugar</div><div>Oil</div>`
+document.getElementsByClassName("products")[0].innerHTML = `<img src="./6.png" class="flag flag2"/><strong>Products from New Zealand</strong><hr class="products-hr"/><div style="height: 10px;"></div><div>Wine</div><div>Cotton</div><div>Sugar</div><div>Oil</div>`
 products.style.display = 'block'
 scrolltoObj.scrollIntoView({ 
   behavior: 'smooth' 

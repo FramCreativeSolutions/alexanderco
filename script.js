@@ -9,9 +9,6 @@ homePage.scrollIntoView({
   behavior: 'smooth' 
 });
 if (burger.style.display !== 'none') {
-  document.getElementsByClassName("container-menu-items2")[0].style.display = 'none'
-  burger.style.display = 'block'
-  close.style.display = 'none'
   homePage.scrollIntoView({ 
     behavior: 'smooth' 
   });
@@ -49,6 +46,7 @@ let products_button2 = document.getElementById('products2')
 let productsMobile = document.getElementById('products-mobile')
 products_button2.addEventListener('click',() => {
   document.getElementsByClassName("container-menu-items2")[0].style.display = 'none'
+  
 burger.style.display = 'block'
 close.style.display = 'none'
 productsMobile.scrollIntoView({ 
@@ -98,15 +96,9 @@ button_home.addEventListener('click',() => {
     document.getElementById('productsDesk').scrollIntoView({ 
   behavior: 'smooth' 
 });
-if (burger.style.display !== 'none') {
-  document.getElementsByClassName("container-menu-items2")[0].style.display = 'none'
-  burger.style.display = 'block'
-  close.style.display = 'none'
   productsMobile.scrollIntoView({ 
     behavior: 'smooth' 
   });
-
-}
 })
 
 
